@@ -1,8 +1,12 @@
+import Server from "./clases/server";
+import  router  from "./routes/router";
 
 
 
-// const server = new Server();
+ const server = new Server();
 
-// server.start(()=>{
-//     console.log('Servidor corriendo');
-// })
+ server.app.use('/', router);
+
+server.levantarServidor( ()=>{
+    console.log(`Servidor corriendo en el puerto ${server.port}`);
+});
