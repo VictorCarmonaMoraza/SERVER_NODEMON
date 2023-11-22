@@ -1,0 +1,4 @@
+## archivos que no sean parte de nuestro repositorio
+dist/
+
+node_modules/

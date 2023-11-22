@@ -1,9 +1,15 @@
-## Comando para ejecutar nodemon (M odo observador)
+## Socket- Server
+
+## Reconstruir modulos de Node
+npm install
+
+## Comando para ejecutar nodemon (M odo observador) Generar el DIST
 
 tsc -w 
 
-## Ejecutar carpeta del proyecto dist/
+## Ejecutar carpeta del proyecto dist/ (Levantar servidor)
 nodemon dist/
+node dist/
 
 ## Instalar nodemon desde la pagina:
 https://www.npmjs.com/package/nodemon
