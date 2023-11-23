@@ -25,3 +25,14 @@ npm i cors
 
 ## Tenemos que instalar los type/cors que nos ayudara a autocompletar
 npm install @types/cors --save-dev
+
+## url de socket.io
+https://socket.io/
+
+## Instalar la libreria socket.io
+npm install socket.io
+npm install --save socket.io
+
+## Debemos de instalar los tipos de socket.io
+npm install @types/socket.io --save-dev
+
