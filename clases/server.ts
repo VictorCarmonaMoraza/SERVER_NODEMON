@@ -3,6 +3,9 @@ import { SERVER_PORT } from '../global/environment';
 import socketIO from 'socket.io';
 import http from 'http';
 
+//Con esto decimos que queremos todas las importanciones de este archivo
+import * as socket from '../socket/sockets';
+
 export default class Server{
 
 
@@ -30,8 +33,12 @@ export default class Server{
 
         //Cuando iun cliente se conecta
         //on es para escuchar eventos
-        this.io.on('connection',cliente=>{
+        this.io.on('connection',(cliente)=>{
             console.log('Cliente comectado');
+
+
+            //Desconectar
+            socket.desconectar(cliente);
         });
     }
 
