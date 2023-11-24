@@ -48,6 +48,8 @@ class Server {
         //on es para escuchar eventos
         this.io.on('connection', (cliente) => {
             console.log('Cliente comectado');
+            //Mensajes
+            socket.mensaje(cliente);
             //Desconectar
             socket.desconectar(cliente);
         });
